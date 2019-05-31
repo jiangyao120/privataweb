@@ -1,0 +1,682 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#top {
+    width: 30%;
+    height: 15%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0.6;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+
+
+
+#top-left {
+    width: 100%;
+    font-size: 40px;
+    height: 100%;
+    position: relative;
+
+}
+
+#top-left span {
+    overflow: hidden;
+    position: absolute;
+    left: 100%;
+
+    height: 100%;
+    line-height: 200%;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#mask li {
+    width: 100px;
+    margin: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#mask span {
+    display: inline-block;
+    position: relative;
+}
+
+#mask span::after {
+    display: block;
+    width: 0;
+    height: 3px;
+    background: red;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#mask ul {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mask li:hover span::after {
+    width: 100%;
+    animation: lineIn 0.5s forwards;
+    -webkit-animation: lineIn 0.5s forwards;
+    /* Safari 和 Chrome */
+    animation: lineIn 0.5s forwards;
+    -moz-animation: lineIn 0.5s forwards;
+    /* Firefox */
+    -o-animation: lineIn 0.5s forwards;
+}
+
+#mask li:hover {
+    color: red;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#shou {
+    width: 100%;
+    height: 100%;
+}
+
+#first {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.first-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    animation: move-shou 10s linear infinite;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+#bgfirst{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move-bg 10s linear infinite;
+    width: 100%;
+    height: 100%;
+}
+.nav-boxed{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+#first .nav-box {
+    transition: all 1s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+#xuanxiang {
+    width: 100%;
+    height: 100%;
+}
+
+#xuanxiang p {
+    margin-top: 150px;
+    transition: all 1s ease;
+    margin-bottom: 60px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#masked {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -635px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+#masked a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+#font {
+    margin-left: 50%;
+    height: 100px;
+    transform: translateX(-210px);
+}
+
+.li {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: #eeeeee solid 1px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#font li:hover {
+    color: #fff;
+    background: red;
+}
+
+#xuan li {
+    width: 270px;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#xuan {
+    margin-top: 100px;
+    height: 300px;
+    transition: all 1s ease;
+    position: relative;
+}
+
+#xuan img {
+    transition: all 1s ease;
+}
+
+#xuan img:hover {
+    transform: translateX(-10px);
+}
+
+.xuan-img {
+    width: 0%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.select {
+    width: 930PX;
+    transition: all 1s ease;
+
+
+}
+
+.caidan {
+    opacity: 1;
+    background-size: cover;
+    transition: all 1s ease;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.caidan i {
+    font-size: 30px;
+}
+
+.shanchu i {
+    font-size: 25px;
+}
+#return{
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.shanchu {
+    color: #fff;
+    background-size: cover;
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+#contain {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#mask {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: -1;
+    text-align: center;
+    transition: all 1s ease;
+    margin-right: -20%;
+}
+
+#myjian {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 200px;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+#myjian-img {
+    width: 100%;
+    height: 700px;
+    background-size: contain;
+    background: url('./../imgs/AD0IncmbBRACGAAg8Y_fvgUo8I_F2wIwgA84oAY.jpg') no-repeat center center;
+}
+
+#myname {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 60%;
+    transition: all 1s ease;
+    margin-left: 500px;
+}
+
+#myname p {
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+#myname span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 250px;
+    overflow: hidden;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+#wrap.wrap {
+    width: 80%;
+    transition: all 1s ease;
+}
+
+#gerenjineng {
+    width: 100%;
+    position: relative;
+    height: 1000px;
+}
+
+#geren-left {
+    position: sticky;
+    top: 0;
+    height: 600px;
+}
+#gerenleft-box{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 50%;
+}
+.geren-right {
+    top: 0;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    height: 1000px;
+
+}
+
+#geren-left p {
+    margin-top: 100px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#neirong {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#jinengtu {
+    margin-top: 40%;
+    margin-left: 50%;
+    transform: translate(-20%, -50%)
+}
+
+#jinengbiao {
+    float: left;
+    margin-top: 40%;
+    margin-left: 30%;
+    transform: translate(-100%, -57%);
+}
+
+#jinengbiao h5 {
+    margin-top: 50px;
+    font-size: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.jinengtiao {
+    height: 10px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+.tiao1{
+    background: #0f0;
+    width: 180px;
+}
+.tiao2{
+    background: #114599;
+    width: 190px;
+}
+.tiao3{
+    background: #998511;
+    width: 160px;
+}
+.tiao4{
+    background: #991155;
+    width: 140px;
+}
+.tiao5{
+    background: #16c079;
+    width: 160px;
+}
+
+#neirong p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#nei-img {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#contact {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#contact p {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+#cont-p1 {
+    margin-top: 10%;
+}
+
+#cont-p2 {
+    margin-top: 10%;
+}
+
+#cont-img {
+    margin-top: 10%;
+    width: 100%;
+}
+
+#cont-box {
+    position: relative;
+    border: 5px black solid;
+    width: 30%;
+    height: 20%;
+    margin-top: -5%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#cont-img ul {
+    position: relative;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+#cont-img li {
+    width: 150px;
+    height: 150px;
+    transition: all 1s ease;
+    opacity: 0;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    line-height: 150px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+#cont-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 20px;
+    display: flex;
+}
+
+#cont-nav li {
+    margin-left: 20px;
+    flex: 1;
+    width: 20px;
+    height: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+#cont-nav img {
+    width: 20px;
+    height: 20px;
+}
+
+#cont-img li.img-select {
+    z-index: 1;
+    opacity: 1;
+}
+
+#first .nav-shou {
+    background: #005493;
+    width: 160px;
+    height: 160px;
+    top: 60%;
+    left: 30%;
+    cursor: pointer;
+}
+
+
+#first .nav-shou2 {
+    background: #317500;
+    top: 60%;
+    left: 45%;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    cursor: pointer;
+}
+@-webkit-keyframes reverseRotataZ{
+0%{-webkit-transform: rotateZ(0deg);}
+100%{-webkit-transform: rotateZ(-360deg);}
+}
+@-webkit-keyframes rotataZ{
+0%{-webkit-transform: rotateZ(0deg);}
+100%{-webkit-transform: rotateZ(360deg);}
+}
+#musicControl {position: absolute;top: 5%;left: 1%; width: 200px;height: 200px;overflow: hidden; margin-top:0;display:block;z-index:2;}
+#musicControl a { margin: 50px auto; display: block; border-radius:50% ; width:100px;height:100px;overflow:hidden;background:url('./../imgs/109951163293243877.jpg') no-repeat;background-size:100%;}
+#musicControl .stoped {animation-play-state:running;}
+.on { -webkit-animation: reverseRotataZ 10s linear infinite;animation-play-state:paused;animation-fill-mode:forwards;}
+#musicControl img{position: absolute;top: 0;left: 0;width: 200px;height: 200px;}
+
+#first .nav-shou3 {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    background: #c10000;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    cursor: pointer;
+}
+
+#first .nav-shou4 {
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    background: #790090;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    cursor: pointer;
+}
+#xuan-mask{
+    width:100%;
+    height: 100%;
+}
+#firstbox div.touch:hover {
+    opacity: 0.6;
+    width: 120px;
+    height: 120px;
+}
+
+.nav-box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#masked #mask-left{
+    transform:translate(0%,0%); position:absolute;top:0;left:0;width:50%;height:100%;cursor:url('./../imgs/icons/mipmap-mdpi/ic_launcher.png'),auto;
+}
+#masked #mask-right{
+   transform:translate(0%,0%); position:absolute;top:0;left:50%;width:50%;height:100%;cursor:url('./../imgs/icons (1)/android/mipmap-mdpi/ic_launcher.png'),auto;
+}
+@keyframes lineIn {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+@keyframes move-bg {
+    0% {
+        transform: translate(-50%, -50%);
+
+    }
+
+   
+
+    50% {
+        transform: translate(-45%, -50%);
+
+    }
+
+   
+
+    100% {
+
+        transform: translate(-50%, -50%)
+    }
+}
+
+@keyframes move-shou {
+    0% {
+        transform: translate(-50%, -45%);
+
+    }
+
+    25% {
+        transform: translate(-55%, -50%);
+
+    }
+
+    50% {
+        transform: translate(-50%, -55%);
+
+    }
+
+    75% {
+        transform: translate(-45%, -50%);
+    }
+
+    100% {
+
+        transform: translate(-50%, -45%)
+    }
+}
